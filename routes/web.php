@@ -80,4 +80,21 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 });
         //Livewire::component('admin.brand.index', Index::class);
 
-
+/**
+ * Customer URLs
+ */
+Route::get('customer', function(){
+    return view('customer.index');
+});
+Route::prefix('customer')->group(function(){
+    Route::controller(App\Http\Controllers\CustomerController::class)->group(function () {
+        Route::get('shop', 'getShop')->name('customer.shop');
+        Route::get('about', 'getAbout')->name('customer.about');
+        Route::get('services', 'getServices')->name('customer.services');
+        Route::get('blog', 'getBlog')->name('customer.blog');
+        Route::get('contact', 'getContact')->name('customer.contact');
+        Route::get('cart', 'getCart')->name('customer.cart');
+        Route::get('checkout', 'getCheckout')->name('customer.checkout');
+        Route::get('thankyou', 'getThankyou')->name('customer.thankyou');
+    });
+});
