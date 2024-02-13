@@ -85,7 +85,7 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
  */
 Route::get('customer', function(){
     return view('customer.index');
-});
+})->name('customer');
 Route::prefix('customer')->group(function(){
     Route::controller(App\Http\Controllers\CustomerController::class)->group(function () {
         Route::get('shop', 'getShop')->name('customer.shop');

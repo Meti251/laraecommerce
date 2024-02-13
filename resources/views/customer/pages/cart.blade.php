@@ -40,7 +40,8 @@
                       <tbody>
                         <tr>
                           <td class="product-thumbnail">
-                            <img src="{{asset('tools/images/product-1.png')}}" alt="Image" class="img-fluid">
+                            <img src="{{asset('tools/images/prod1.png')}}" alt="Image" class="img-fluid">
+                            {{-- <img src="{{asset('tools/images/product-1.png')}}" alt="Image" class="img-fluid"> --}}
                           </td>
                           <td class="product-name">
                             <h2 class="h5 text-black">Product 1</h2>
@@ -64,7 +65,8 @@
 
                         <tr>
                           <td class="product-thumbnail">
-                            <img src="{{asset('tools/images/product-2.png')}}" alt="Image" class="img-fluid">
+                            <img src="{{asset('tools/images/prod2.png')}}" alt="Image" class="img-fluid">
+                            {{-- <img src="{{asset('tools/images/product-2.png')}}" alt="Image" class="img-fluid"> --}}
                           </td>
                           <td class="product-name">
                             <h2 class="h5 text-black">Product 2</h2>
@@ -141,7 +143,7 @@
 
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='checkout.html'">Proceed To Checkout</button>
+                          <button class="btn btn-black btn-lg py-3 btn-block" onclick="window.location='{{route('customer.checkout')}}'">Proceed To Checkout</button>
                         </div>
                       </div>
                     </div>

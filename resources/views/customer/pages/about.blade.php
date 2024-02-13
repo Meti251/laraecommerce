@@ -15,7 +15,8 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="{{asset('tools/images/couch.png')}}" class="img-fluid">
+								<img src="{{asset('tools/images/land.png')}}" class="img-fluid">
+								{{-- <img src="{{asset('tools/images/couch.png')}}" class="img-fluid"> --}}
 							</div>
 						</div>
 					</div>
@@ -38,6 +39,7 @@
 								<div class="feature">
 									<div class="icon">
 										<img src="{{asset('tools/images/truck.svg')}}" alt="Image" class="imf-fluid">
+										{{-- <img src="{{asset('tools/images/truck.svg')}}" alt="Image" class="imf-fluid"> --}}
 									</div>
 									<h3>Fast &amp; Free Shipping</h3>
 									<p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
@@ -79,7 +81,8 @@
 
 					<div class="col-lg-5">
 						<div class="img-wrap">
-							<img src="{{asset('tools/images/why-choose-us-img.jpg')}}" alt="Image" class="img-fluid">
+							<img src="{{asset('tools/images/post3.jpg')}}" alt="Image" class="img-fluid">
+							{{-- <img src="{{asset('tools/images/why-choose-us-img.jpg')}}" alt="Image" class="img-fluid"> --}}
 						</div>
 					</div>
 

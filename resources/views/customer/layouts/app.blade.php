@@ -24,7 +24,7 @@
     <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
         <div class="container">
-            <a class="navbar-brand" href="index.html">Zephyr<span>.</span></a>
+            <a class="navbar-brand" href="{{route('customer')}}">Zephyr<span>.</span></a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
                 aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarsFurni">
                 <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="{{route('customer')}}">Home</a>
                     </li>
                     <li><a class="nav-link" href="{{ route('customer.shop') }}">Shop</a></li>
                     <li><a class="nav-link" href="{{ route('customer.about') }}">About us</a></li>
@@ -59,7 +59,8 @@
         <div class="container relative">
 
             <div class="sofa-img">
-                <img src="tools/images/sofa.png')}}" alt="Image" class="img-fluid">
+                <img src="{{asset('tools/images/img6.png')}}" alt="Image" class="img-fluid">
+                {{-- <img src="{{asset('tools/images/sofa.png')}}" alt="Image" class="img-fluid"> --}}
             </div>
 
             <div class="row">
